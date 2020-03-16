@@ -12,6 +12,10 @@ const Charts = ({ coinData }) => {
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
           <Chart sparklineData={coin.sparkline_in_7d.price} />
+          <h4>Current Price: {coin.current_price}</h4>
+          <h4>Price Change 24h: {coin.price_change_24h} Change Percentage: {coin.price_change_percentage_24h}</h4>
+          <h4>Market Cap: {coin.market_cap} Market Cap Change 24h: {coin.market_cap_change_24h} Change Percentage: {coin.market_cap_change_percentage_24h}</h4>
+          <h4>Last Updated: {coin.last_updated}</h4>
         </div>
       ))}
     </div>
